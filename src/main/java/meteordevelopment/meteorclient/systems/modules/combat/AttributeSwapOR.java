@@ -32,7 +32,7 @@ import net.minecraft.util.hit.HitResult;
 import net.minecraft.util.math.Box;
 import net.minecraft.util.math.Vec3d;
 
-public class AttributeSwap extends Module {
+public class AttributeSwapOR extends Module {
     private final SettingGroup sgGeneral = settings.getDefaultGroup();
     private final SettingGroup sgSwappingOptions = settings.createGroup("Swapping Options");
     private final SettingGroup sgSwordEnchants = settings.createGroup("Sword Enchants");
@@ -309,7 +309,7 @@ public class AttributeSwap extends Module {
     private int backTimer;
     private boolean awaitingBack;
 
-    public AttributeSwap() {
+    public AttributeSwapOR() {
         super(Categories.Combat, "attribute-swap", "Swaps to a target slot when you attack.");
     }
 
